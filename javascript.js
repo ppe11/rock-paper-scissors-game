@@ -69,7 +69,7 @@ document.querySelectorAll("button:not(.exit-button)").forEach(button => {
 
 // Adding a reset button
 const resetButton = document.getElementById("reset");
-resetButton.setAttribute("style", "display: block; margin: 20px auto; padding: 10px 20px; font-size: 18px; cursor: pointer; border-radius: 15px; font-family: monospace"");
+resetButton.setAttribute("style", "display: block; margin: 20px auto; padding: 10px 20px; font-size: 18px; cursor: pointer; border-radius: 15px; font-family: monospace")
 
 resetButton.addEventListener("click", () => {
     humanScore = 0;
