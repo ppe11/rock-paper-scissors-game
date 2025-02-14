@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <script src="javascript.js" defer></script>
+    <style>
+        body {
+            font-family: monospace;
+            text-align: center;
+            margin: 50px;
+            background-color: pink;
+        }
+
+        .exit-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            transition: transform 0.01s ease, filter 0.01s ease;
+        }
+
+        .exit-button img {
+            width: 200px; 
+            height: 80px;
+        }
+
+        .exit-button:active {
+            transform: scale(0.9);
+            filter: brightness(0.8);
+        }
+a
+        .exit-button:hover {
+            filter: brightness(1.2);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Rock Paper Scissors Game ^.^</h1>
+    <p>Try to score 5 points to win!</p>
+    <div class="buttons">
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+        <button id="reset">Reset Game</button>
+    </div>
+    <div id="results"></div>
+
+    <button class="exit-button" onclick="exitGame()">
+        <img src="images/exitbutton.png" alt="Exit Button">
+    </button>
+
+    <script>
+        function exitGame() {
+            window.location.href = "index.html"; 
+        }
+    </script>
+</body>
+</html>
