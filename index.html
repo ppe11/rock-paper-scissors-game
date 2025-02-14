@@ -11,10 +11,12 @@
             background-position: center;
             background-repeat: no-repeat;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
+            gap: 20px;
         }
 
 
@@ -39,10 +41,17 @@ a
         .start-button:hover {
             filter: brightness(1.2);
         }
+
+        h1 {
+            font-family: monospace;
+            font-size: 67px;
+            margin-bottom: 100px;
+            color: rgb(215, 86, 107);
+        }
     </style>
 </head>
 <body>
-
+    <h1>ROCK PAPER SCISSORS GAME</h1>
     <button class="start-button" onclick="startGame()">
         <img src="images/startbutton.png" alt="Start Button">
     </button>
